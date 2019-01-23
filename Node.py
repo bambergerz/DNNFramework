@@ -1,5 +1,6 @@
 import numpy as np
 from abc import abstractmethod
+import matplotlib as plt
 
 
 class Node:
@@ -35,6 +36,7 @@ class Node:
     @abstractmethod
     def backward(self, back_in):
         pass
+
 
 
 class Relu(Node):
